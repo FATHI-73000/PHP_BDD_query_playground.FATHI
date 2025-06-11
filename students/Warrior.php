@@ -1,11 +1,12 @@
 <?php
 
 require_once __DIR__ . "/../base/LocalWarrior.php";
-require_once "Weapon.php";  // On inclut la classe Weapon
+
+$GLOBALS['warriorName'] = 'FATHI';
 
 abstract class Warrior extends LocalWarrior
 {
-    public string $name;
+   public string $name;
     public int $speed;
     public int $life;
     public int $shield;
@@ -21,4 +22,5 @@ abstract class Warrior extends LocalWarrior
         $this->shield = 20;
         $this->imageUrl = "";
     }
+        
 }

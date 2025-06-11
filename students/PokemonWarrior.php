@@ -4,15 +4,13 @@ require_once "Warrior.php";
 
 class PokemonWarrior extends Warrior
 {
-    public int $mentalPower;
-    public int $superPower;
+    
     public int $level;
 
     public function __construct(string $name)
     {
         parent::__construct($name);
-        $this->mentalPower = 8;
-        $this->superPower = 100;
+        $this->imageUrl = "";
         $this->level = 1;
     }
 
